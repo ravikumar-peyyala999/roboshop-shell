@@ -76,7 +76,7 @@ yum install mysql -y  &>>$LOGFILE
 
 VALIDATE $? "Installing MySQL client"
 
-mysql -h mysql.joindevops.online -uroot -pRoboShop@1 < /app/schema/shipping.sql  &>>$LOGFILE
+mysql -h mysql.awsdevopslearning.online -uroot -pRoboShop@1 < /app/schema/shipping.sql  &>>$LOGFILE
 
 VALIDATE $? "Loaded countries and cities info"
 
